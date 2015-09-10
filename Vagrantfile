@@ -12,20 +12,20 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network "private_network", ip: "192.168.33.99"
   
   # host name
-  config.vm.hostname = "local.digital.dev"
+  config.vm.hostname = "local.nginx.dev"
   
   # virtual box name
   config.vm.provider "virtualbox" do |v|
-    v.name = "digital"
+    v.name = "nginx"
   end
   
   # run script as root
   config.vm.provision "shell",
-    path: "nginx-php5/install.sh"
+    path: "install.sh"
     
   # run script as vagrant user
   config.vm.provision "shell",
-    path: "nginx-php5/post-install.sh",
+    path: "post-install.sh",
     privileged: FALSE
 
 end

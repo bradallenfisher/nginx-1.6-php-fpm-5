@@ -65,6 +65,8 @@ cat /vagrant/drupal.conf.txt > /etc/nginx/apps/drupal/drupal.conf
 cat /vagrant/example.conf.text > /etc/nginx/sites-available/test.com.conf
 cat /vagrant/varnish.txt > /etc/sysconfig/varnish
 cat /vagrant/default.vcl.txt > /etc/varnish/default.vcl
+mkdir -p /usr/local/bin/scripts
+touch /usr/local/bin/scripts/si.sh
 cat /vagrant/si.sh > /usr/local/bin/scripts/si.sh
 chmod 700 /usr/local/bin/scripts/si.sh
 chown -R vagrant:vagrant /usr/local/bin/scripts/si.sh

@@ -1,5 +1,5 @@
 #!/bin/bash
-yum install git wget -y
+yum install git wget nano -y
 ##MYSQL
 ##--------------------------
 yum localinstall http://dev.mysql.com/get/mysql-community-release-el6-5.noarch.rpm -y
@@ -47,6 +47,7 @@ echo export EDITOR=nano >> $HOME/.bashrc
 echo PATH='$HOME/.composer/vendor/bin:$PATH' >> $HOME/.bashrc
 echo PATH='$PATH:/usr/local/bin/wrk' >> $HOME/.bashrc
 echo export PATH >> $HOME/.bashrc
+echo 'alias install="./usr/local/bin/scripts/si.sh"' >> $HOME/.bashrc
 source $HOME/.bashrc
 
 ##source .bashrc

@@ -41,7 +41,6 @@ ln -s /usr/local/bin/composer /usr/bin/composer
 composer global require drush/drush:7.*
 
 
-
 ##add to .bashrc
 ##--------------------------
 echo export EDITOR=nano >> $HOME/.bashrc
@@ -58,14 +57,14 @@ git clone https://github.com/perusio/drupal-with-nginx.git /etc/nginx
 cd /etc/nginx
 git checkout D7
 
-cat nginx.conf.txt > /etc/nginx/nginx.conf
-cat php-fpm.conf.txt > /etc/php-fpm.conf
-cat www.conf.txt > /etc/php-fpm.d/www.conf
-cat drupal.conf.txt > /etc/nginx/apps/drupal/drupal.conf
-cat example.conf.text > /etc/nginx/sites-available/test.com.conf
-cat varnish.txt > /etc/sysconfig/varnish
-cat default.vcl.txt > /etc/varnish/default.vcl
-mv wrk/ /usr/local/bin
+cat /vagrant/nginx.conf.txt > /etc/nginx/nginx.conf
+cat /vagrant/php-fpm.conf.txt > /etc/php-fpm.conf
+cat /vagrant/www.conf.txt > /etc/php-fpm.d/www.conf
+cat /vagrant/drupal.conf.txt > /etc/nginx/apps/drupal/drupal.conf
+cat /vagrant/example.conf.text > /etc/nginx/sites-available/test.com.conf
+cat /vagrant/varnish.txt > /etc/sysconfig/varnish
+cat /vagrant/default.vcl.txt > /etc/varnish/default.vcl
+mv /vagrant/wrk/ /usr/local/bin
 
 mkdir -p /etc/nginx/sites-enabled
 cd /etc/nginx/sites-enabled/

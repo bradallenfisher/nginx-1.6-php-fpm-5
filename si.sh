@@ -3,7 +3,7 @@
 # Directories
 ##########################################################
 httpDir="/var/www/html/"
-rootDir="$1"
+rootDir="$1/"
 libraries="sites/all/libraries/"
 modules="sites/all/modules/"
 files="sites/default/files/"

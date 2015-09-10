@@ -30,7 +30,12 @@ yum install nginx16 -y
 rpm --nosignature -i https://repo.varnish-cache.org/redhat/varnish-3.0.el6.rpm
 yum install varnish -y
 
-
+##Install NODEJS
+curl --silent --location https://rpm.nodesource.com/setup | bash -
+yum install gcc-c++ make -y
+yum groupinstall 'Development Tools' -y
+yum -y install nodejs
+npm install -g grunt-cli
 
 ##Install Drush
 whoami

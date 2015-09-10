@@ -45,9 +45,7 @@ composer global require drush/drush:7.*
 ##--------------------------
 echo export EDITOR=nano >> $HOME/.bashrc
 echo PATH='$HOME/.composer/vendor/bin:$PATH' >> $HOME/.bashrc
-echo PATH='$PATH:/usr/local/bin/wrk' >> $HOME/.bashrc
 echo export PATH >> $HOME/.bashrc
-echo 'alias install="./usr/local/bin/scripts/si.sh"' >> $HOME/.bashrc
 source $HOME/.bashrc
 
 ##source .bashrc
@@ -70,7 +68,7 @@ touch /usr/local/bin/scripts/si.sh
 cat /vagrant/si.sh > /usr/local/bin/scripts/si.sh
 chmod 700 /usr/local/bin/scripts/si.sh
 chown -R vagrant:vagrant /usr/local/bin/scripts/si.sh
-mv /vagrant/wrk/ /usr/local/bin
+
 
 mkdir -p /etc/nginx/sites-enabled
 cd /etc/nginx/sites-enabled/
@@ -105,4 +103,4 @@ chkconfig --levels 235 varnish on
 service nginx restart
 service php-fpm restart
 service varnish restart
-chmod 700 /usr/local/bin/wrk/wrk
+

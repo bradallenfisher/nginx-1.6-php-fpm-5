@@ -129,5 +129,6 @@ drush -y pm-uninstall toolbar
 drush -y pm-disable block
 drush -y pm-uninstall block
 drush -y pm-enable block
-
+drush cook d7adminux -y
+drush en devel -y
 drush cc all

@@ -64,6 +64,9 @@ cat /vagrant/drupal.conf.txt > /etc/nginx/apps/drupal/drupal.conf
 cat /vagrant/example.conf.text > /etc/nginx/sites-available/test.com.conf
 cat /vagrant/varnish.txt > /etc/sysconfig/varnish
 cat /vagrant/default.vcl.txt > /etc/varnish/default.vcl
+cat /vagrant/si.sh > /usr/local/bin/scripts/si.sh
+chmod 700 /usr/local/bin/scripts/si.sh
+chown -R vagrant:vagrant /usr/local/bin/scripts/si.sh
 mv /vagrant/wrk/ /usr/local/bin
 
 mkdir -p /etc/nginx/sites-enabled

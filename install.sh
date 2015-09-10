@@ -95,17 +95,17 @@ mkdir -p /var/cache/nginx/microcache
 ##--------------------------
 service nginx start
 service php-fpm start
-service varnish start
+#service varnish start
 
 chkconfig --add nginx
 chkconfig --levels 235 nginx on
 chkconfig --add php-fpm
 chkconfig --levels 235 php-fpm on
-chkconfig --add varnish
-chkconfig --levels 235 varnish on
+#chkconfig --add varnish
+#chkconfig --levels 235 varnish on
 
 ## WIPE ALLL CONFIG
 service nginx restart
 service php-fpm restart
-service varnish restart
+#service varnish restart
 

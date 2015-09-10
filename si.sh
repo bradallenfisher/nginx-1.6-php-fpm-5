@@ -38,7 +38,7 @@ WGET_PATH="$(which wget)"
 UNZIP="$(which unzip)"
 TAR="$(which tar)"
 ##########################################################
-
+sudo chown -R vagrant:vagrant /var/www/html
 # Download Core
 ##########################################################
 cd $httpDir

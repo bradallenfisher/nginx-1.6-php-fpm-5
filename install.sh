@@ -56,18 +56,18 @@ source $HOME/.bashrc
 ##source .bashrc
 echo source $HOME/.bashrc >> $HOME/.bash_profile
 
-#rm /etc/nginx/ -rf
-#git clone https://github.com/perusio/drupal-with-nginx.git /etc/nginx
-#cd /etc/nginx
-#git checkout D7
+rm /etc/nginx/ -rf
+git clone https://github.com/perusio/drupal-with-nginx.git /etc/nginx
+cd /etc/nginx
+git checkout D7
 
-#cat /vagrant/nginx.conf.txt > /etc/nginx/nginx.conf
-#cat /vagrant/php-fpm.conf.txt > /etc/php-fpm.conf
-#cat /vagrant/www.conf.txt > /etc/php-fpm.d/www.conf
-#cat /vagrant/drupal.conf.txt > /etc/nginx/apps/drupal/drupal.conf
-#cat /vagrant/example.conf.text > /etc/nginx/sites-available/test.com.conf
-#cat /vagrant/varnish.txt > /etc/sysconfig/varnish
-#cat /vagrant/default.vcl.txt > /etc/varnish/default.vcl
+cat /vagrant/nginx.conf.txt > /etc/nginx/nginx.conf
+cat /vagrant/php-fpm.conf.txt > /etc/php-fpm.conf
+cat /vagrant/www.conf.txt > /etc/php-fpm.d/www.conf
+cat /vagrant/drupal.conf.txt > /etc/nginx/apps/drupal/drupal.conf
+cat /vagrant/example.conf.text > /etc/nginx/sites-available/test.com.conf
+cat /vagrant/varnish.txt > /etc/sysconfig/varnish
+cat /vagrant/default.vcl.txt > /etc/varnish/default.vcl
 mkdir -p /usr/local/bin/scripts
 touch /usr/local/bin/scripts/si.sh
 cat /vagrant/si.sh > /usr/local/bin/scripts/si.sh
@@ -89,7 +89,7 @@ phpinfo();
 EOF
 
 #in case you would like to do microcaching.
-#mkdir -p /var/cache/nginx/microcache
+mkdir -p /var/cache/nginx/microcache
 
 ##Turn On - Stay On
 ##--------------------------

@@ -45,7 +45,7 @@ cd $httpDir
 
 if [[ -d "$httpDir$rootDir" ]]
   then
-  rm $rootDir -rf
+  sudo rm $rootDir -rf
 fi
 
 drush dl -y --destination=$httpDir --drupal-project-rename=$rootDir
@@ -62,10 +62,6 @@ drush cleanup
 echo "creating module directories"
 mkdir $httpDir$rootDir$modules\contrib
 mkdir $httpDir$rootDir$modules\custom
-
-# Download your themes
-##########################################################
-drush -y dl omega
 
 # Disable some core modules
 ##########################################################

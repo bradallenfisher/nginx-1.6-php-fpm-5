@@ -66,8 +66,8 @@ cat /vagrant/php-fpm.conf.txt > /etc/php-fpm.conf
 cat /vagrant/www.conf.txt > /etc/php-fpm.d/www.conf
 cat /vagrant/drupal.conf.txt > /etc/nginx/apps/drupal/drupal.conf
 cat /vagrant/example.conf.text > /etc/nginx/sites-available/test.com.conf
-cat /vagrant/varnish.txt > /etc/sysconfig/varnish
-cat /vagrant/default.vcl.txt > /etc/varnish/default.vcl
+#cat /vagrant/varnish.txt > /etc/sysconfig/varnish
+#cat /vagrant/default.vcl.txt > /etc/varnish/default.vcl
 mkdir -p /usr/local/bin/scripts
 touch /usr/local/bin/scripts/si.sh
 cat /vagrant/si.sh > /usr/local/bin/scripts/si.sh

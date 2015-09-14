@@ -65,7 +65,8 @@ cat $HOME/nginx-1.6-php-fpm-5/drupal.conf.txt > /etc/nginx/apps/drupal/drupal.co
 cat $HOME/nginx-1.6-php-fpm-5/example.conf.text > /etc/nginx/sites-available/test.com.conf
 cat $HOME/nginx-1.6-php-fpm-5/varnish.txt > /etc/sysconfig/varnish
 cat $HOME/nginx-1.6-php-fpm-5/default.vcl.txt > /etc/varnish/default.vcl
-touch /usr/local/bin/scripts/si.sh
+
+mkdir -p /usr/local/bin/scripts/
 cat $HOME/nginx-1.6-php-fpm-5/si.sh > /usr/local/bin/scripts/si.sh
 
 mkdir -p /etc/nginx/sites-enabled

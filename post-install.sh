@@ -20,7 +20,7 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 source /home/vagrant/.rvm/scripts/rvm
 rvm install ruby-1.9.3-p551
 
-
+echo "chown this file /usr/local/bin/scripts/si.sh to your new user"
 echo "now run this to play around..."
 echo "install test test test test"
 exec bash

@@ -43,10 +43,9 @@ sudo chown -R vagrant:vagrant /var/www/html
 ##########################################################
 cd $httpDir
 
-echo "Starting Clean... deleting $httpDir$rootDir if it exists"
 if [[ -d "$httpDir$rootDir" ]]
   then
-  sudo rm $rootDir -rf
+  rm $rootDir -rf
 fi
 
 drush dl -y --destination=$httpDir --drupal-project-rename=$rootDir

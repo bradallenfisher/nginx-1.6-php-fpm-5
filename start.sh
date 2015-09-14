@@ -100,4 +100,5 @@ chkconfig --levels 235 varnish on
 service nginx restart
 service php-fpm restart
 service varnish restart
-chmod 700 /usr/local/bin/wrk/wrk
+
+echo "now run the post-install script to set up a user and drush for that user."

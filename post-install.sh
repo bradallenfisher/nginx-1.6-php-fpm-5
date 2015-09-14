@@ -23,3 +23,4 @@ rvm install ruby-1.9.3-p551
 
 echo "now run this to play around..."
 echo "install test test test test"
+exec bash

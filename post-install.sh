@@ -21,6 +21,7 @@ source /home/vagrant/.rvm/scripts/rvm
 rvm install ruby-1.9.3-p551
 
 echo "chown this file /usr/local/bin/scripts/si.sh to your new user"
+echo "your new user MUST have sudo!!!"
 echo "now run this to play around..."
 echo "install test test test test"
 exec bash

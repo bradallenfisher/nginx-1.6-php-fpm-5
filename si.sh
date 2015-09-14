@@ -118,7 +118,6 @@ echo -e "////////////////////////////////////////////////////"
 
 echo "$PWD"
 
-drush omega-wizard
 drush -y pm-disable bartik
 drush -y pm-uninstall color
 drush -y pm-uninstall dashboard

@@ -46,7 +46,7 @@ composer global require drush/drush:7.*
 ##--------------------------
 echo export EDITOR=nano >> $HOME/.bashrc
 echo PATH='$HOME/.composer/vendor/bin:$PATH' >> $HOME/.bashrc
-echo PATH='$PATH:/usr/local/bin/wrk' >> $HOME/.bashrc
+
 echo export PATH >> $HOME/.bashrc
 source $HOME/.bashrc
 
@@ -65,7 +65,7 @@ cat $HOME/stacks/nginx-php5/drupal.conf.txt > /etc/nginx/apps/drupal/drupal.conf
 cat $HOME/stacks/nginx-php5/example.conf.text > /etc/nginx/sites-available/test.com.conf
 cat $HOME/stacks/nginx-php5/varnish.txt > /etc/sysconfig/varnish
 cat $HOME/stacks/nginx-php5/default.vcl.txt > /etc/varnish/default.vcl
-mv $HOME/stacks/nginx-php5/wrk/ /usr/local/bin
+
 
 mkdir -p /etc/nginx/sites-enabled
 cd /etc/nginx/sites-enabled/

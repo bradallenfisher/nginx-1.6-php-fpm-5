@@ -58,13 +58,13 @@ git clone https://github.com/perusio/drupal-with-nginx.git /etc/nginx
 cd /etc/nginx
 git checkout D7
 
-cat $HOME/stacks/nginx-php5/nginx.conf.txt > /etc/nginx/nginx.conf
-cat $HOME/stacks/nginx-php5/php-fpm.conf.txt > /etc/php-fpm.conf
-cat $HOME/stacks/nginx-php5/www.conf.txt > /etc/php-fpm.d/www.conf
-cat $HOME/stacks/nginx-php5/drupal.conf.txt > /etc/nginx/apps/drupal/drupal.conf
-cat $HOME/stacks/nginx-php5/example.conf.text > /etc/nginx/sites-available/test.com.conf
-cat $HOME/stacks/nginx-php5/varnish.txt > /etc/sysconfig/varnish
-cat $HOME/stacks/nginx-php5/default.vcl.txt > /etc/varnish/default.vcl
+cat nginx.conf.txt > /etc/nginx/nginx.conf
+cat php-fpm.conf.txt > /etc/php-fpm.conf
+cat www.conf.txt > /etc/php-fpm.d/www.conf
+cat drupal.conf.txt > /etc/nginx/apps/drupal/drupal.conf
+cat example.conf.text > /etc/nginx/sites-available/test.com.conf
+cat varnish.txt > /etc/sysconfig/varnish
+cat default.vcl.txt > /etc/varnish/default.vcl
 
 
 mkdir -p /etc/nginx/sites-enabled
